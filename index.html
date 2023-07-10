@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLEGAR</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main Css -->
+    <link rel="stylesheet" href="/assets/css/spinner.css"/>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Tab Icon Link -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.svg" />
+  </head>
+  <body>
+    <div class="spinner__container">
+      <div class="spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    </div>
+
+  <div class="up"><i class="fa-solid fa-arrow-up"></i></div>
+    <!-- Star Header -->
+    <header id="header">
+      <div class="container ">
+        <div class="left-head">
+          <a href="index.html" class="logo">
+            <img
+              src="assets/imgs/logo.svg"
+              style="width: 60px; margin-right: 12px"
+              alt=""
+            />
+            <div>LLEGAR</div>
+          </a>
+          <form action="">
+            <input id="search" type="text" placeholder="Search" autocomplete="on">
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <!-- Star Menu -->
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="#">Categories</a>
+              <ul class="submenu">
+                <li>
+                  <i class="fa-solid fa-house"></i><a href="">Property</a>
+                  <ul class="submenu2">
+                    <li><a href="">House</a></li>
+                    <li><a href="">Hotel Rooms</a></li>
+                    <li><a href="">Chalet</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-solid fa-car"></i><a href="">Transportation</a>
+                  <ul class="submenu2">
+                    <li><a href="">Cars</a></li>
+                    <li><a href="">Motocycle</a></li>
+                    <li><a href="">Bike</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-solid fa-camera"></i><a href="">Electronics</a>
+                  <ul class="submenu2">
+                    <li><a href="">Cameras</a></li>
+                    <li><a href="">Lighting Equipment</a></li>
+                    <li><a href="">Audio Equipment</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-solid fa-baseball"></i><a href="">Play Areas</a>
+                  <ul class="submenu2">
+                    <li><a href="">PlayGrounds</a></li>
+                    <li><a href="">Water Parks</a></li>
+                    <li><a href="">Miniature golf</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-solid fa-shirt"></i><a href="">Clothes</a>
+                  <ul class="submenu2">
+                    <li><a href="">Male</a></li>
+                    <li><a href="">Female</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="features"><a href="#Features">Features</a></li>
+            <li class="team"><a href="#team">Team</a></li>
+            <li class="about"><a href="#about-us">About</a></li>
+          </ul>
+        </nav>
+            <!-- End Menu -->
+          <div class="btns"">
+            <a href="login.html" class="login">Login</a>
+            <a href="sign_up.html" class="get-started">Get Started</a>
+          </div>
+          <ul class="active-header" id="active-header">
+            <li class="add-item"><i class="fa-regular fa-square-plus"></i></li>
+            <li class="favorite"><i class="fa-regular fa-heart"></i><div></div></li>
+            <li class="profile">
+              <div class="image">
+                
+              </div>
+              <ul id="dropdownProfile" class=" dropdown-profile">
+                <li>
+                  <div class="name"></div>
+                  <div class="email"></div>
+                </li>
+                <li id="yourProfile">Your Profile</li>
+                <li id="myActivities"><div>My Activities <i class="fa-solid fa-arrow-right-long"></i></div>
+                  <ul class="subactivity">
+                    <li id="myItems"><i class="fa-solid fa-house-chimney"></i>My Item</li>
+                    <li id="ItemsIRented"><i class="fa-solid fa-thumbs-up"></i>Items I Had Rente</li>
+                    <li id="clientRented"><i class="fa-solid fa-circle-check"></i>Client Rented</li>
+                  </ul>
+                </li>
+                <li id="orders">Orders</li>
+                <li id="helpCenter">Help Center</li>
+                <li id="editLocation">Edit Location</li>
+                <li id="signOut">Sign Out</li>
+                <li id="delete">Delete Profile</li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </header>
+    <!-- End Header -->
+    <div id="special-offer-header" class="container">
+      <div id="speacialOffer" class="main-title">
+        <div class="title">
+          <h2>Special Offers</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Start Slider Section -->
+    <div class="slider">
+      <div class="container">
+        <i class="fa-solid fa-circle-arrow-left prev"></i>
+        <ul class="image">
+          <li><img src="assets/imgs/Slider_Images/Car_image_Slider2.jpg" alt=""></li>
+          <li><img src="assets/imgs/Slider_Images/Moto-Cycle_image_Slider.jpg" alt=""></li>
+          <li><img src="assets/imgs/Slider_Images/Camera_image_Slider.jpg" alt=""></li>
+        </ul>
+        <div class="indicator"></div>
+        <i class="fa-solid fa-circle-arrow-right next"></i>
+      </div>
+    </div>
+    <!-- End Slider Section -->
+    <div class="container">
+      <div class="main-title" style="margin-top: 56px;">
+        <div class="title">
+          <h2>Items Page</h2>
+        </div>
+        <div id="ItemsPageBtn" class="press-btn">
+          <button>See All</button>
+        </div>
+      </div>
+    </div>
+    <!-- Start Top Deal Section -->
+    <div class="top-deal card-section">
+      <div class="container">
+        <ul class="filter-bar">
+          <li data-cat=".all" class="active">All</li>
+          <li data-cat=".Mercedes">Property</li>
+          <li data-cat=".Nissan">Transportation</li>
+          <li data-cat=".play-areas">Play Areas</li>
+          <li data-cat=".clothes">Clothes</li>
+          <li data-cat=".event-rentals">Event Rentals</li>
+          <li data-cat=".electronics">Electronics</li>
+        </ul>
+        
+        <div id="cards" class="cards">
+          <div class="spinner__container">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Deal Section -->
+    <div id="Features" class="container">
+      <div class="main-title" style="margin-top: 56px;">
+        <div class="title">
+          <h2>Features</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Start Features Section -->
+    <div class="features">
+      <div class="container">
+        <div class="feat">
+          <h3>Recommendation</h3>
+          <p>Algorithm-based recommendations generated from customer browsing and renting history.</p>
+        </div>
+        <div class="feat">
+          <h3>Rating & Reviews</h3>
+          <p>Integration of customer rating and reviews to improve and tailor recommendations.</p>
+        </div>
+        <div class="feat">
+          <h3>Diversity</h3>
+          <p>Diverse selection of items for rent to meet the needs and preferences of customers.</p>
+        </div>
+        <div class="feat">
+          <h3>Reliability</h3>
+          <p>Accurate representation of rental items through clear and detailed descriptions, photos, and videos.</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+    <div id="team" class="container">
+      <div class="main-title" style="margin-top: 56px;">
+        <div class="title">
+          <h2>Team</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Start Team Section -->
+    <div id="team" class="team">
+      <div class="container">
+        <div class="box">
+          <div class="info">
+            <img src="assets/imgs/Person/Nour_logo.jpg" alt="">
+            <h3>Nour Mohamed</h3>
+            <div>Frontend Developer</div>
+          </div>
+          <div class="contact">
+            <a target="_blank" href="https://www.linkedin.com/in/nour-mohamed-935b881b1/"><span>Portfolio</span><i class="fa-solid fa-circle-check"></i></a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100090586631187">Message</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="info">
+            <img src="assets/imgs/Person/Mahmoud_Galal.jpg" alt="">
+            <h3>Mahmoud Galal</h3>
+            <div>Network Security Engineer</div>
+          </div>
+          <div class="contact">
+            <a target="_blank" href="https://www.linkedin.com/in/mahmoud-galal-a52364199/"><span>Portfolio</span><i class="fa-solid fa-circle-check"></i></a>
+            <a target="_blank" href="https://www.facebook.com/mhmwd.jlal1">Message</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="info">
+            <img src="assets/imgs/Person/women_default_image.png" alt="">
+            <h3>Roaa Farghaly</h3>
+            <div>Backend Developer</div>
+          </div>
+          <div class="contact">
+            <a target="_blank" href="https://www.linkedin.com/in/roaa-mokhtar-327717254"><span>Portfolio</span><i class="fa-solid fa-circle-check"></i></a>
+            <a target="_blank" href="https://www.facebook.com/roaa.mokhtar.7/?mibextid=ZbWKwL">Message</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="info">
+            <img src="assets/imgs/Person/Ahmed_Fared.jpg" alt="">
+            <h3>Ahmed Fareed</h3>
+            <div>Mobile Developer</div>
+          </div>
+          <div class="contact">
+            <a target="_blank" href="http://linkedin.com/in/ahmed-fared-341981189"><span>Portfolio</span><i class="fa-solid fa-circle-check"></i></a>
+            <a target="_blank" href="https://www.facebook.com/Ahmed.Fared53?mibextid=LQQJ4d">Message</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="info">
+            <img src="assets/imgs/Person/Ahmed_behery.jpg" alt="">
+            <h3>Ahmed Behery</h3>
+            <div>Mobile Developer</div>
+          </div>
+          <div class="contact">
+            <a target="_blank" href="https://www.linkedin.com/in/ahmed-behery-240246280/"><span>Portfolio</span><i class="fa-solid fa-circle-check"></i></a>
+            <a target="_blank" href="https://www.facebook.com/ahmedbehery55?mibextid=LQQJ4d">Message</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="info">
+            <img src="assets/imgs/Person/women_default_image.png" alt="">
+            <h3>Eman Elazab</h3>
+            <div>Frontend Developer</div>
+          </div>
+          <div class="contact">
+            <a target="_blank" href="https://www.linkedin.com/in/eman-salah-164325276/?trk=contact-info"><span>Portfolio</span><i class="fa-solid fa-circle-check"></i></a>
+            <a target="_blank" href="https://www.instagram.com/emaan_salah_/?igshid=NTc4MTIwNjQ2YQ%3D%3D">Message</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="info">
+            <img src="assets/imgs/Person/Mohamed_Kazlak.jpg" alt="">
+            <h3>Mohamed Kazlak</h3>
+            <div>Backend Developer</div>
+          </div>
+          <div class="contact">
+            <a target="_blank" href="https://www.linkedin.com/in/mohamadkazlak"><span>Portfolio</span><i class="fa-solid fa-circle-check"></i></a>
+            <a target="_blank" href="https://www.facebook.com/mohamadkazlak?mibextid=ZbWKwL">Message</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Team Section -->
+    <div class="container">
+      <div class="main-title" style="margin-top: 56px;">
+        <div class="title">
+          <h2>Subscription Plans</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Start Subscription Section -->
+    <div class="subscribe">
+      <div class="container">
+        <div class="plan">
+          <span>Standard Plan</span>
+          <div class="price"><span class="number">$50</span> <span>/month</span></div>
+          <div class="body">
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Sharing 15% of the rent amount with the application</p>
+            </div>
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Top on search level 3</p>
+            </div>
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>30 Days of subscription</p>
+            </div>
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>3 Ads</p>
+            </div>
+            <div class="row disabled">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Verified Account</p>
+            </div>
+          </div>
+          <button>Choose plan</button>
+        </div>
+        <div class="plan">
+          <span>Recommended Plan</span>
+          <div class="price"><span class="number">$80%</span> <span>/month</span></div>
+          <div class="body">
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Sharing 10% of the rent amount with the application</p>
+            </div>
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Top on search level 2</p>
+            </div>
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>30 Days of subscription</p>
+            </div>
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>7 Ads</p>
+            </div>
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Verified Account</p>
+            </div>
+          </div>
+          <button>Choose plan</button>
+        </div>
+        <div class="plan">
+          <span>High Plan</span>
+          <div class="price"><span class="number">$110</span> <span>/month</span></div>
+          <div class="body">
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Sharing 5% of the rent amount with the application</p>
+            </div>
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Top on search level 1</p>
+            </div>
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>30 Days of subscription</p>
+            </div>
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>15 Ads</p>
+            </div>
+            <div class="row">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Verified Account</p>
+            </div>
+          </div>
+          <button type="submit">Choose plan</button>
+        </div>
+      </div>
+    </div>
+    <!-- End Subscription Section -->
+    <div id="about-us" class="container">
+      <div class="main-title" style="margin-top: 56px;">
+        <div class="title">
+          <h2>About us</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Start About us Section -->
+    <div class="about-us">
+      <div class="container">
+        <div class="box">
+          <h1>LLEGAR</h1>
+          <P>At LLEGAR, our top priority is providing reliable, secure, and easy-to-use rental services, while also promoting diversity and inclusivity on our platform. We pride ourselves on offering a wide variety of rental items to meet the diverse needs and preferences of our customers.</P>
+        </div>
+      </div>
+    </div>
+    <!-- End About us Section -->
+    <div id="contact-us" class="container">
+      <div class="main-title" style="margin-top: 56px;">
+        <div class="title">
+          <h2>Contact us</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Start Contact us Section -->
+    <div class="contact-us">
+      <div class="overlay"></div>
+      <div class="container">
+        <h1 class="title">We provide the easiest way to get your work done</h1>
+        <p>Our customer service team is available to assist you with any questions or concerns you may have.</p>
+        <div class="buttons">
+          <a  href="contact_us.html">Contact us <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="">Find Out More</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact us Section -->
+    <!-- Start Footer Section -->
+    <footer id="footer" style="margin-top: 40;">
+      <div class="container">
+        <div class="box">
+          <div class="title"><img src="assets/imgs/logo.svg" alt="">LLEGAR</div>
+          <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <p>© 2023, LLEGAR, Inc. "All rights reserved to LLEGAR, Inc. and its affiliates. LLEGAR name and logo, and related names are trademarks of LLEGAR, Inc. All other trademarks are the respective owner's property."</p>
+        </div>
+        <div class="box">
+          <div class="link"> 
+            <div class="con about-us">
+              <div class="footer-links">
+                About Us
+              </div>
+            </div>
+          </div>
+          <div class="link"> 
+            <div class="con contact-Us">
+              <div class="footer-links">
+                Contact us
+              </div>
+            </div>
+          </div>
+          <div class="link"> 
+            <div class="con help-us">
+              <div class="footer-links">
+                Help Us
+              </div>
+            </div>
+          </div>
+          <div class="link"> 
+            <div id="privacyPolicy" class="con privacy-policy">
+              <div class="footer-links">
+                Privacy Policy
+              </div>
+            </div>
+          </div>
+          <div class="link"> 
+            <div class="con jobs-offer">
+              <div class="footer-links">
+                Jobs Offer
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="info">
+            <i class="fa-solid fa-earth-americas"></i>
+            Egypt, Ismalia, Suez Qanal University, faculty of computer science 
+          </div>
+          <div class="info">
+            <i class="fa-solid fa-clock"></i>
+            Technical support Hours: From 10:00 To 18:00
+          </div>
+          <div class="info">
+            <i class="fa-solid fa-square-phone"></i>
+            <div class="numbers">
+              +20123456789
+              +20198765432
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">Made by Team LLEGAR</div>
+    </footer>
+    <!-- Scripts files -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+/* Start Media Query */
+@media (max-width: 768px) {
+  .new-pass .container .content form .form-group input {
+    width: 100px !important;
+    height: 50px !important;
+  }
+  .new-pass .container {
+    width: 100%;
+  }
+}
+/* End Media Query */
+
+body > div:first-of-type {
+  margin: 0 !important;
+}
+
+.new-pass {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-pass .container {
+  background-color: var(--main-color);
+  width: 908px;
+  padding: 40px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.new-pass .container .header {
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: white;
+}
+
+.new-pass .container .header i {
+  cursor: pointer;
+}
+
+.new-pass .container .content .header-text {
+  display: flex;
+  align-items: center;
+}
+
+.new-pass .container .content .header-text h1 {
+  color: white;
+  margin-right: 20px;
+  padding-left: 50px;
+}
+
+.new-pass .container .content .header-text img {
+  width: 40px;
+}
+
+.new-pass .container .content .body {
+  padding-left: 50px;
+  margin: 20px 0px;
+  font-size: 16px;
+  color: white;
+  width: 70%;
+  line-height: 1.5;
+}
+
+.new-pass .container .content form .pass {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.new-pass .container .content form .pass2 {
+  margin-bottom: 50px;
+}
+
+.new-pass form .password-input {
+  color: var(--white-color);
+  position: relative;
+  max-width: 200px;
+}
+
+.new-pass form .password-input i {
+  position: absolute;
+  right: 10px;
+}
+
+.new-pass .container .content form label {
+  color: var(--white-color);
+  font-weight: bold;
+  margin: 10px 0px 15px;
+  font-size: 20px;
+}
+
+.new-pass .container .content form input {
+  border-color: transparent transparent var(--white-color) transparent;
+  border-width: 1.8px;
+  outline: none;
+  padding: 2px 0px;
+  color: var(--white-color);
+  font-size: 20px;
+  background-color: transparent;
+  max-width: 200px;
+}
+
+.new-pass .container .content form input::placeholder {
+  color: var(--second-btn-color);
+}
+
+.new-pass .container .footer {
+  display: flex;
+  justify-content: center;
+}
+
+.new-pass .container .content button {
+  padding: 20px 50px;
+  font-size: 20px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  font-weight: bold;
+  color: var(--main-color);
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+.new-pass .container .content button:hover {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  outline: 2px solid var(--white-color);
+}

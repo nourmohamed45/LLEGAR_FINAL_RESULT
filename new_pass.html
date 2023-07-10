@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forget Password</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main Css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/new_pass.css">
+    <link rel="stylesheet" href="/assets/css/spinner.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Tab Icon Link -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.svg" />
+  </head>
+  <body>
+    <div class="spinner__container">
+      <div class="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+  </div>
+    <div class="up"><i class="fa-solid fa-arrow-up"></i></div>
+    <!-- Start Verification Box -->
+    <div class="new-pass">
+      <div class="container">
+        <div class="header">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="content">
+          <div class="header-text">
+            <h1>Create New Password</h1>
+            <img src="assets/imgs/padlock.png" alt="">
+          </div>
+          <div class="body">
+            <p>Enter your email address to get an OTP Code to reset your Password</p>
+          </div>
+          <form>
+            <div class="pass">
+              <label for="newPassword">New Password</label>
+              <div class="password-input">
+                <input class="password" id="newPassword" type="password">
+                <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
+              </div>
+            </div>
+            <div class="footer">
+              <button class="gen-new-pass">Continue</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Verification Box -->
+    <!-- Scripts files -->
+    <script src="assets/js/new_pass.js"></script>
+  </body>
+</html>

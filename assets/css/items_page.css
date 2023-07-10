@@ -1,0 +1,25 @@
+/* ===== Start Top Deal Section ===== */
+
+.items-page .container .empty-items-page {
+  text-align: center;
+  display: none;
+}
+
+.items-page .container .empty-items-page img {
+  width: 60%;
+}
+
+.items-page .container .empty-items-page .text {
+  text-align: center;
+}
+
+.items-page .container .empty-items-page .text h3{
+  color: var(--main-color);
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.items-page .container .empty-items-page .text p {
+  font-size: 24px;
+  color: var(--text-color);
+}

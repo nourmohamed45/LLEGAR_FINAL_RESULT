@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Location</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main Css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/edit_location.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Tab Icon Link -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.svg" />
+  </head>
+  <body>
+    <div class="up"><i class="fa-solid fa-arrow-up"></i></div>
+    <!-- Star Header -->
+    <header id="header">
+      <div class="container ">
+        <div class="left-head">
+          <a href="index.html" class="logo">
+            <img
+              src="assets/imgs/logo.svg"
+              style="width: 60px; margin-right: 12px"
+              alt=""
+            />
+            <div>LLEGAR</div>
+          </a>
+          <form action="">
+            <input id="WishlistSearch" type="text" placeholder="Search" />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <!-- Star Menu -->
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="#">Categories</a>
+              <ul class="submenu">
+                <li>
+                  <i class="fa-solid fa-house"></i><a href="">Property</a>
+                  <ul class="submenu2">
+                    <li><a href="">House</a></li>
+                    <li><a href="">Hotel Rooms</a></li>
+                    <li><a href="">Chalet</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-solid fa-car"></i><a href="">Transportation</a>
+                  <ul class="submenu2">
+                    <li><a href="">Cars</a></li>
+                    <li><a href="">Motocycle</a></li>
+                    <li><a href="">Bike</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-solid fa-camera"></i><a href="">Electronics</a>
+                  <ul class="submenu2">
+                    <li><a href="">Cameras</a></li>
+                    <li><a href="">Lighting Equipment</a></li>
+                    <li><a href="">Audio Equipment</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-solid fa-baseball"></i><a href="">Play Areas</a>
+                  <ul class="submenu2">
+                    <li><a href="">PlayGrounds</a></li>
+                    <li><a href="">Water Parks</a></li>
+                    <li><a href="">Miniature golf</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-solid fa-shirt"></i><a href="">Clothes</a>
+                  <ul class="submenu2">
+                    <li><a href="">Male</a></li>
+                    <li><a href="">Female</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="features"><a href="#Features">Features</a></li>
+            <li class="team"><a href="#team">Team</a></li>
+            <li class="about"><a href="#about-us">About</a></li>
+          </ul>
+        </nav>
+            <!-- End Menu -->
+          <div class="btns"">
+            <a href="login.html" class="login">Login</a>
+            <a href="sign_up.html" class="get-started">Get Started</a>
+          </div>
+          <ul class="active-header">
+            <li class="add-item"><i class="fa-regular fa-square-plus"></i></li>
+            <li class="favorite"><i class="fa-regular fa-heart"></i></li>
+            <li class="profile">
+              <div class="image">
+                
+              </div>
+              <ul id="dropdownProfile" class=" dropdown-profile">
+                <li>
+                  <div class="name"></div>
+                  <div class="email"></div>
+                </li>
+                <li id="yourProfile">Your Profile</li>
+                <li id="myActivities"><div>My Activities <i class="fa-solid fa-arrow-right-long"></i></div>
+                  <ul class="subactivity">
+                    <li id="myItems"><i class="fa-solid fa-house-chimney"></i>My Item</li>
+                    <li id="ItemsIRented"><i class="fa-solid fa-thumbs-up"></i>Items I Had Rente</li>
+                    <li id="clientRented"><i class="fa-solid fa-circle-check"></i>Client Rented</li>
+                  </ul>
+                </li>
+                <li id="orders">Orders</li>
+                <li id="helpCenter">Help Center</li>
+                <li id="editLocation">Edit Location</li>
+                <li id="signOut">Sign Out</li>
+                <li id="delete">Delete Profile</li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </header>
+    <!-- End Header -->
+    <div class="container">
+      <div class="main-title">
+        <div class="title">
+          <h2>Edit Location</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Start Edit location Section -->
+    <div class="location">
+      <div class="container">
+        <div class="left">
+          <form >
+            <div class="location-title">
+              <label for="title">Title</label>
+              <input id="title" type="text" required>
+            </div>
+            <div class="location-details">
+              <label for="detail">Location Details</label>
+              <div class="input-with-icon">
+                <input id="detail" type="text" placeholder="123 Main St, Apt 4B, Anytwon, state 12345" required>
+                <i class="fas fa-location-dot"></i> <!-- Font Awesome location icon -->
+              </div>
+            </div>
+            <div class="defualt-check">
+              <input type="checkbox" name="default" id="check">
+              <label for="check">Make this default location</label>
+            </div>
+            <div class="buttons">
+              <button onclick="addLocation(event)" class="btn" id="add">Add</button>
+              <button onclick="resetLocation(event)" class="btn" id="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+        <div class="location-boxes" id="locationBoxes">
+          <!-- Existing location boxes will be added here -->
+        </div>
+      </div>
+    </div>
+    <!-- End Edit Location Section -->
+    <!-- Start Footer Section -->
+    <footer id="footer" style="margin-top: 40;">
+      <div class="container">
+        <div class="box">
+          <div class="title"><img src="assets/imgs/logo.svg" alt="">LLEGAR</div>
+          <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <p>© 2023, LLEGAR, Inc. "All rights reserved to LLEGAR, Inc. and its affiliates. LLEGAR name and logo, and related names are trademarks of LLEGAR, Inc. All other trademarks are the respective owner's property."</p>
+        </div>
+        <div class="box">
+          <div class="link"> 
+            <div class="con about-us">
+              <div class="footer-links">
+                About Us
+              </div>
+            </div>
+          </div>
+          <div class="link"> 
+            <div class="con contact-Us">
+              <div class="footer-links">
+                Contact us
+              </div>
+            </div>
+          </div>
+          <div class="link"> 
+            <div class="con help-us">
+              <div class="footer-links">
+                Help Us
+              </div>
+            </div>
+          </div>
+          <div class="link"> 
+            <div id="privacyPolicy" class="con privacy-policy">
+              <div class="footer-links">
+                Privacy Policy
+              </div>
+            </div>
+          </div>
+          <div class="link"> 
+            <div class="con jobs-offer">
+              <div class="footer-links">
+                Jobs Offer
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="info">
+            <i class="fa-solid fa-earth-americas"></i>
+            Egypt, Ismalia, Suez Qanal University, faculty of computer science 
+          </div>
+          <div class="info">
+            <i class="fa-solid fa-clock"></i>
+            Technical support Hours: From 10:00 To 18:00
+          </div>
+          <div class="info">
+            <i class="fa-solid fa-square-phone"></i>
+            <div class="numbers">
+              +20123456789
+              +20198765432
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">Made by Team LLEGAR</div>
+    </footer>
+    <!-- End Footer Section -->
+    <!-- Scripts files -->
+    <script src="assets/js/data.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
+    <script src="assets/js/edit_location.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLEGAR Sign In</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main Css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <link rel="stylesheet" href="assets/css/sign-up.css"> -->
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/assets/css/spinner.css"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Tab Icon Link -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.svg" />
+  </head>
+  <body>
+    <div class="spinner__container">
+      <div class="spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    </div>
+    <div class="sign-in-page">
+      <div class="right">
+        <div class="image">
+          <img src="assets/imgs/login.svg" alt="">
+        </div>
+      </div>
+      <div class="left">
+        <img class="logo" src="assets/imgs/logo.svg" alt="">
+        <h1>Sign In</h1>
+        <div class="form">
+          <form action="#">
+            <div class="email">
+              <label for="email">Email</label>
+              <input id="email" type="email" autocomplete="off">
+            </div>
+            <div class="pass">
+              <label for="password">Password</label>
+              <div class="password-input">
+                <input id="password" type="password">
+                <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
+              </div>
+            </div>
+            <div class="remember">
+              <input type="checkbox" name="remember" id="remember">
+              <label for="remember">Remember Me</label>
+            </div>
+            <div class="submit">
+              <button class="sign-in" id="signIn">Sign In</button>
+            </div>
+          </form>
+        </div>
+        <a class="forget" href="">Forget Password</a>
+        <div class="separator">Or Login With</div>
+        <div class="icons">
+          <a href=""><img src="assets/imgs/Icon_Brands/google.png" alt=""></a>
+          <a href=""><img src="assets/imgs/Icon_Brands/facebook.png" alt=""></a>
+          <a href=""><img src="assets/imgs/Icon_Brands/apple-logo.png" alt=""></a>
+        </div>
+        <div class="footer">
+          <div>Already have an account?</div>
+          <a href="sign_up.html">sign Up</a>
+        </div>
+      </div>
+
+    <!-- Scripts files -->
+    <script src="assets/js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+body > div:first-of-type {
+  margin: 0 !important;
+}
+
+.sign-up-page {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+  height: 100vh;
+}
+
+.sign-up-page .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-up-page .left .logo {
+  width: 90px;
+  margin-top: 50px;
+}
+
+.sign-up-page .left h1 {
+  color: var(--main-color);
+  margin-top: 30px;
+}
+
+.sign-up-page .left .form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sign-up-page .left .form form {
+  width: 70%;
+  margin: auto;
+}
+
+.sign-up-page .left .form form div:not(.remember) {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-page .left .form form label {
+  color: var(--main-color);
+  font-weight: 500;
+  margin: 10px 0px 5px 0px;
+  font-size: 15px;
+}
+
+.sign-up-page .left .form form input {
+  border-color: transparent transparent var(--main-color) transparent;
+  border-width: 1.8px;
+  outline: none;
+  padding: 2px 0px;
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.sign-up-page .left .form form .submit {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sign-up-page .left .password-input {
+  display: flex;
+  position: relative;
+}
+
+.sign-up-page .left .password-input i {
+  position: absolute;
+  right: 10px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.sign-up-page .left .form form .submit input {
+  margin: auto;
+  width: fit-content;
+  padding: 10px 100px;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-up-page .left .separator {
+  position: relative;
+  font-size: 13px;
+  margin: 30px 0px 20px;
+  color: var(--main-color);
+}
+
+.sign-up-page .left .separator::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  left: -120%;
+  background-color: var(--main-color);
+}
+
+.sign-up-page .left .separator::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  right: -120%;
+  background-color: var(--main-color);
+}
+
+.sign-up-page .left .icons {
+  margin: 10px 0px 30px;
+}
+
+.sign-up-page .left .icons a {
+  margin: 0px 10px;
+}
+
+.sign-up-page .left .icons a img {
+  width: 40px;
+}
+
+.sign-up-page .left .footer {
+  display: flex;
+}
+
+.sign-up-page .left .footer div {
+  color: var(--main-color);
+  margin-right: 20px;
+}
+
+.sign-up-page .left .footer a {
+  color: var(--link-color);
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.sign-up-page .right {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100vh;
+}
+
+.sign-up-page .right .contain {
+  width: 70%;
+  margin: 0px auto;
+}
+
+.sign-up-page .right .full-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-page .right .full-name:first-of-type {
+  margin-top: 50px;
+}
+
+.sign-up-page .right .address {
+  margin-top: 20px;
+}
+
+.sign-up-page .right .full-name label {
+  color: var(--white-color);
+  font-weight: 500;
+  margin: 10px 0px 5px 0px;
+  font-size: 15px;
+}
+
+.sign-up-page .right .full-name input {
+  border-color: transparent transparent var(--secondery-color) transparent;
+  border-width: 1.8px;
+  outline: none;
+  padding: 2px 0px;
+  color: var(--secondery-color);
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.sign-up-page .right .selectors {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-page .right .selectors select,
+.sign-up-page .right .selectors input {
+  padding: 10px 5px;
+  margin: 10px 0px;
+  font-weight: bold;
+  outline: none;
+  background-color: var(--box-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.sign-up-page .right .image input::-webkit-file-upload-button {
+  color: white;
+  background-color: var(--main-color);
+  padding: 10px 15px;
+  border: none;
+  margin-right: 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  cursor: pointer;
+}
+
+.sign-up-page .right .selectors select option {
+  padding: 10px;
+  color: var(--main-color);
+}
+
+.sign-up-page .right .selectors select:first-of-type {
+  margin-top: 50px;
+}
+
+.sign-up-page .right .selectors .image {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-page .right .selectors .image label {
+  color: var(--white-color);
+}

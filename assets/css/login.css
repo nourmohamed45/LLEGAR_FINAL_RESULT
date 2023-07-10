@@ -1,0 +1,207 @@
+@media (max-width: 1050px) {
+  .sign-in-page .right {
+    display: none !important;
+  }
+}
+
+body > div:first-of-type {
+  margin: 0 !important;
+}
+
+.sign-in-page {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+  height: 100vh;
+}
+
+.sign-in-page .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.sign-in-page .left .logo {
+  width: 90px;
+  margin-top: 50px;
+}
+
+.sign-in-page .left h1 {
+  color: var(--main-color);
+  margin-top: 30px;
+}
+
+.sign-in-page .left .form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sign-in-page .left .form form {
+  width: 70%;
+  margin: auto;
+}
+
+.sign-in-page .left .form form div:not(.remember) {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in-page .left .form form label {
+  color: var(--main-color);
+  font-weight: 500;
+  margin: 10px 0px 5px 0px;
+  font-size: 15px;
+}
+
+.sign-in-page .left .form form input {
+  border-color: transparent transparent var(--main-color) transparent;
+  border-width: 1.8px;
+  outline: none;
+  padding: 2px 0px;
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.sign-in-page .left .form form .submit {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sign-in-page .left .form form .submit button {
+  margin: auto;
+  width: fit-content;
+  padding: 10px 100px;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.sign-in-page .left .separator {
+  position: relative;
+  font-size: 13px;
+  margin: 30px 0px 20px;
+  color: var(--main-color);
+}
+
+.sign-in-page .left .separator::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  left: -120%;
+  background-color: var(--main-color);
+}
+
+.sign-in-page .left .separator::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  right: -120%;
+  background-color: var(--main-color);
+}
+
+.sign-in-page .left .icons {
+  margin: 10px 0px 30px;
+}
+
+.sign-in-page .left .icons a {
+  margin: 0px 10px;
+}
+
+.sign-in-page .left .icons a img {
+  width: 40px;
+}
+
+.sign-in-page .left .footer {
+  display: flex;
+}
+
+.sign-in-page .left .footer div {
+  color: var(--main-color);
+  margin-right: 20px;
+}
+
+.sign-in-page .left .footer a {
+  color: var(--link-color);
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.sign-in-page .right {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100vh;
+}
+
+
+.sign-in-page .right .image {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in-page .right .image img {
+  width: 50%;
+}
+
+.sign-in-page .left .form form .remember {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.sign-in-page .left .form form .remember input {
+  width: 15px;
+  height: 15px;
+  appearance: none;
+  border: 2px solid var(--main-color);
+  margin-right: 10px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  cursor: pointer;
+}
+
+.sign-in-page .left .password-input {
+  display: flex;
+  position: relative;
+}
+
+.sign-in-page .left .password-input i {
+  position: absolute;
+  right: 10px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.sign-in-page .left .form form .remember input:checked {
+  background-color: var(--main-color);
+}
+
+.sign-in-page .left .form form .remember label {
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.sign-in-page .left .forget {
+  margin-top: 20px;
+  color: var(--success-color);
+}

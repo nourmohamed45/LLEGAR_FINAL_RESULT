@@ -1,0 +1,51 @@
+/* Start Contact Us */
+
+.contact-with-us .container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-with-us .container .box {
+  cursor: pointer;
+  padding: 10px 60px;
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  background-color: var(--white-color);
+  border: 3px solid var(--main-color);
+  width: 300px;
+  margin: 5px;
+  font-size: 14px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: bold;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+
+.contact-with-us .container .box a {
+  color: var(--main-color);
+}
+
+.contact-with-us .container .box:hover a {
+  color: var(--white-color);
+}
+
+.contact-with-us .container .box i {
+  padding-right: 15px;
+  font-size: 24px;
+}
+
+.contact-with-us .container .box:hover {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+
+/* End Contact Us */

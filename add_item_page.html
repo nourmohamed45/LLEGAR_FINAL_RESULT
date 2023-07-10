@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLEGAR</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main Css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link rel="stylesheet" href="/assets/css/spinner.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/add_item_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Tab Icon Link -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo.svg" />
+  </head>
+  <body>
+    <div class="spinner__container">
+      <div class="spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    </div>
+      <div class="up"><i class="fa-solid fa-arrow-up"></i></div>
+    <!-- Star Header -->
+    <header id="header">
+      <div class="container ">
+        <div class="left-head">
+          <a href="index.html" class="logo">
+            <img
+              src="assets/imgs/logo.svg"
+              style="width: 60px; margin-right: 12px"
+              alt=""
+            />
+            <div>LLEGAR</div>
+          </a>
+          <form action="">
+            <input id="search" type="text" placeholder="Search" autocomplete="off">
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <!-- Star Menu -->
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="#">Categories</a>
+              <ul class="submenu">
+                <li>
+                  <i class="fa-solid fa-house"></i><a href="">Property</a>
+                  <ul class="submenu2">
+                    <li><a href="">House</a></li>
+                    <li><a href="">Hotel Rooms</a></li>
+                    <li><a href="">Chalet</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-solid fa-car"></i><a href="">Transportation</a>
+                  <ul class="submenu2">
+                    <li><a href="">Cars</a></li>
+                    <li><a href="">Motocycle</a></li>
+                    <li><a href="">Bike</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-solid fa-camera"></i><a href="">Electronics</a>
+                  <ul class="submenu2">
+                    <li><a href="">Cameras</a></li>
+                    <li><a href="">Lighting Equipment</a></li>
+                    <li><a href="">Audio Equipment</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-solid fa-baseball"></i><a href="">Play Areas</a>
+                  <ul class="submenu2">
+                    <li><a href="">PlayGrounds</a></li>
+                    <li><a href="">Water Parks</a></li>
+                    <li><a href="">Miniature golf</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-solid fa-shirt"></i><a href="">Clothes</a>
+                  <ul class="submenu2">
+                    <li><a href="">Male</a></li>
+                    <li><a href="">Female</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="features"><a href="#Features">Features</a></li>
+            <li class="team"><a href="#team">Team</a></li>
+            <li class="about"><a href="#about-us">About</a></li>
+          </ul>
+        </nav>
+            <!-- End Menu -->
+          <div class="btns"">
+            <a href="login.html" class="login">Login</a>
+            <a href="sign_up.html" class="get-started">Get Started</a>
+          </div>
+          <ul class="active-header" id="active-header">
+            <li class="add-item"><i class="fa-solid fa-square-plus"></i></li>
+            <li class="favorite"><i class="fa-regular fa-heart"></i><div></div></li>
+            <li class="profile">
+              <div class="image">
+                
+              </div>
+              <ul id="dropdownProfile" class=" dropdown-profile">
+                <li>
+                  <div class="name"></div>
+                  <div class="email"></div>
+                </li>
+                <li id="yourProfile">Your Profile</li>
+                <li id="myActivities"><div>My Activities <i class="fa-solid fa-arrow-right-long"></i></div>
+                  <ul class="subactivity">
+                    <li id="myItems"><i class="fa-solid fa-house-chimney"></i>My Item</li>
+                    <li id="ItemsIRented"><i class="fa-solid fa-thumbs-up"></i>Items I Had Rente</li>
+                    <li id="clientRented"><i class="fa-solid fa-circle-check"></i>Client Rented</li>
+                  </ul>
+                </li>
+                <li id="orders">Orders</li>
+                <li id="helpCenter">Help Center</li>
+                <li id="editLocation">Edit Location</li>
+                <li id="signOut">Sign Out</li>
+                <li id="delete">Delete Profile</li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </header>
+    <!-- End Header -->
+    <div id="itemDetails">
+      <div class="container">
+        <div id="myItem" class="container">
+          <div class="main-title" style="margin-top: 56px;">
+            <div class="title">
+              <h2>My Item</h2>
+            </div>
+          </div>
+        </div>
+        <div class="title-input">
+          <label for="title">Title</label>
+          <input id="title" type="text">
+        </div>
+        <!-- <div class="paid-btn">
+          <div><i class="fa-solid fa-fire"></i>Pay for Ads<i class="fa-solid fa-fire"></i></div>
+        </div> -->
+        <div class="photo-label">Photos</div>
+        <div class="wrapper photo-container">
+          <form action="" class="img-form">
+            <input type="file" class="file-input" name="file" hidden>
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Browse File to Upload</p>
+          </form>
+          <div class="upload-img-sections">
+            <section class="progress-area">
+              
+            </section>
+            <section class="uploaded-area">
+              
+            </section>
+          </div>
+        </div>
+        <div class="selection-and-description">
+          <div class="category-type">
+            <label for="categoryType">Category Type:</label>
+            <select name="category-type" id="categoryType">
+              <option value="property" selected>Property</option>
+              <option value="transportation">Transportation</option>
+              <option value="electronics">Electronics</option>
+              <option value="play-areas">Play Areas</option>
+              <option value="clothes">Clothes</option>
+            </select>
+          </div>
+          <div class="subCategory-type">
+            <label for="subCategoryType">SubCategory Type:</label>
+            <select name="sub-category-type" id="subCategoryType">
+              <option value="apartments" selected>Apartments</option>
+              <option value="hotel-rooms">Hotel Rooms</option>
+              <option value="chalet">Chalet</option>
+              <option value="cars">Cars</option>
+              <option value="motocycle">Motocycle</option>
+              <option value="bike">Bike</option>
+              <option value="cameras">Cameras</option>
+              <option value="light-equipments">Light Equipments</option>
+              <option value="audio-equipments">Audio Equipments</option>
+              <option value="play-grounds">PlayGrounds</option>
+              <option value="water-parks">Water Parks</option>
+              <option value="miniature-golf">Miniature Golf</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="description-input">
+            <label for="description-input">Description</label>
+            <textarea name="descrption" id="description-input" cols="50" rows="10"></textarea>
+          </div>
+        </div>
+        <div class="price">
+          <label for="pricePerDay">Price /day</label>
+          <input id="pricePerDay" type="number">
+        </div>
+        <div class="location">
+          <label for="location">Location</label>
+          <select name="location" id="location">
+            <option value="cairo" selected>Cairo</option>
+            <option value="ismalia">Ismalia</option>
+            <option value="tanta">Tanta</option>
+            <option value="alexandria">Alexandria</option>
+          </select>
+        </div>
+        <div class="condition-input">
+          <label for="condition-input">Your Condition</label>
+          <textarea name="condition" id="condition-input" cols="50" rows="10"></textarea>
+          <div class="not-required">*Not Required</div>
+        </div>
+        <div class="checkboxes">
+          <div class="new-or-used">
+            <div class="new">
+              <input type="radio" name="new" id="new" value="true">
+              <label for="new">New</label>
+            </div>
+            <div class="used">
+              <input type="radio" name="new" id="used" value="false">
+              <label for="used">Used</label>
+            </div>
+          </div>
+          <div class="availability">
+            <div class="available">
+              <input type="radio" name="available" id="available" value="true">
+              <label for="available">Available</label>
+            </div>
+            <div class="not-available">
+              <input type="radio" name="available" id="not-available" value="false">
+              <label for="not-available">Not Available</label>
+            </div>
+          </div>
+        </div>
+        <div class="share-btn-container">
+          <div class="share-btn">Share</div>
+       
+      </div>
+      </div>
+    </div>
+    <!-- Start Footer -->
+    <footer id="footer" style="margin-top: 40;">
+      <div class="container">
+        <div class="box">
+          <div class="title"><img src="assets/imgs/logo.svg" alt="">LLEGAR</div>
+          <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <p>© 2023, LLEGAR, Inc. "All rights reserved to LLEGAR, Inc. and its affiliates. LLEGAR name and logo, and related names are trademarks of LLEGAR, Inc. All other trademarks are the respective owner's property."</p>
+        </div>
+        <div class="box">
+          <div class="link"> 
+            <div class="con about-us">
+              <div class="footer-links">
+                About Us
+              </div>
+            </div>
+          </div>
+          <div class="link"> 
+            <div class="con contact-Us">
+              <div class="footer-links">
+                Contact us
+              </div>
+            </div>
+          </div>
+          <div class="link"> 
+            <div class="con help-us">
+              <div class="footer-links">
+                Help Us
+              </div>
+            </div>
+          </div>
+          <div class="link"> 
+            <div id="privacyPolicy" class="con privacy-policy">
+              <div class="footer-links">
+                Privacy Policy
+              </div>
+            </div>
+          </div>
+          <div class="link"> 
+            <div class="con jobs-offer">
+              <div class="footer-links">
+                Jobs Offer
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="info">
+            <i class="fa-solid fa-earth-americas"></i>
+            Egypt, Ismalia, Suez Qanal University, faculty of computer science 
+          </div>
+          <div class="info">
+            <i class="fa-solid fa-clock"></i>
+            Technical support Hours: From 10:00 To 18:00
+          </div>
+          <div class="info">
+            <i class="fa-solid fa-square-phone"></i>
+            <div class="numbers">
+              +20123456789
+              +20198765432
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">Made by Team LLEGAR</div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Scripts files -->
+    <!-- <script src="assets/js/script.js"></script> -->
+    <script type="module" src="assets/js/add_item_page.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>
