@@ -49,7 +49,7 @@ let generateProduct = () => {
               <i class="fa-solid fa-heart" onclick = "addedToFavorite(${item.id})"></i>
             </div>
             <div class="card-image">
-              <img src="assets/imgs/Card_Images/main2.jpg" alt="">
+              <img src="assets/imgs/Card_Images/main2.jfif" alt="">
             </div>
           </div>
           <a onclick="saveItemData(${item.id})" class="details">
