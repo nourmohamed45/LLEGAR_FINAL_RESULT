@@ -80,7 +80,7 @@ function generateItem(id = "64a74370e67c6d0054a98bf7") {
             <img src="assets/imgs//Person/Ahmed-Salem.jpg" alt="">
             <div class="name-and-date">
               <div class="name">${item.Owner.userName}</div>
-              <div class="date"><span class="num">2</span> <span>Days ago</span></div>
+              <div class="date"><span class="num">2</span> <span>minutes ago</span></div>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@ function generateItem(id = "64a74370e67c6d0054a98bf7") {
             <div class="mid">${item.city}</span>, <span class="location">${
         item.location.address
       }</span></div>
-            <div class="footer"><span class="star"><i class="fa-solid fa-star"></i></span> <span class="rate">4.0</span> (<span class="reviews">0</span> Reviews) <span class="available">${
+            <div class="footer"><span class="star"><i class="fa-solid fa-star"></i></span> <span class="rate">0.0</span> (<span class="reviews">0</span> Reviews) <span class="available">${
               item.availablity === true ? "Available" : "Not Available"
             }</span></div>
           </div>
@@ -106,27 +106,27 @@ function generateItem(id = "64a74370e67c6d0054a98bf7") {
         <div class="box-container">
           <div class="box">
             <div class="image">
-              <img src="assets/imgs/Card_Images/house.jpg" alt="">
+              <img src="assets/imgs/Card_Images/car/mercedes1.jpg" alt="">
             </div>
           </div>
           <div class="box">
             <div class="image">
-              <img src="assets/imgs/Card_Images/House/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg" alt="">
+              <img src="assets/imgs/Card_Images/car/mercedes2.jpg" alt="">
             </div>
           </div>
           <div class="box">
             <div class="image">
-              <img src="assets/imgs/Card_Images/House/andrea-davis-IWfe63thJxk-unsplash.jpg" alt="">
+              <img src="assets/imgs/Card_Images/car/mercedes3.jpg" alt="">
             </div>
           </div>
           <div class="box">
             <div class="image">
-              <img src="assets/imgs/Card_Images/House/collov-home-design-KvGG0paOhOA-unsplash.jpg" alt="">
+              <img src="assets/imgs/Card_Images/car/mercedes4.jpg" alt="">
             </div>
           </div>
           <div class="box">
             <div class="image">
-              <img src="assets/imgs/Card_Images/House/francesca-tosolini-tHkJAMcO3QE-unsplash.jpg" alt="">
+              <img src="assets/imgs/Card_Images/car/mercedes5.jpg" alt="">
             </div>
           </div>
           

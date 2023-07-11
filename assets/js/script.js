@@ -186,37 +186,37 @@ let generateProduct = () => {
             item.productStar = `<i class="fa-regular fa-star"></i>`;
           }
           return `
-          <div class="all card ${item.title}" onclick=\"addId('${item.id}')\" ">
-          <div class="img">
-            <div class="fav" id ="item-${item.id}">
+          <div class="all card ${item.title} onclick=\"addId('${item.id}')\" ">
+            <div class="img">
+              <div class="fav" id ="item-${item.id}">
               <i class="fa-solid fa-heart" ></i>
+              </div>
+              <div class="card-image">
+                <img src="assets/imgs/Card_Images/main2.jfif" alt="">
+              </div>
             </div>
-            <div class="card-image">
-              <img src="assets/imgs/Card_Images/main.jpg" alt="">
-            </div>
+            <a onclick="saveItemData(${item.id})" class="details">
+              <div class="top">
+                <div class="title">
+                  <span class="subCat">${item.title}</span>, <span class="location">${item.city}</span>
+                </div>
+                <div class="rate">
+                  ${item.productStar}
+                  <span>${item.ratingsQuantity}</span>
+                </div>
+              </div>
+              <div class="mid">
+                <p class="desc">${item.description}</p>
+              </div>
+              <div class="bottom">
+                <div class="price"><span>$</span><span class="number">${item.pricePerDay} </span>/day</div> 
+              </div>
+            </a>
           </div>
-          <a onclick="saveItemData(${item.id})" class="details">
-            <div class="top">
-              <div class="title">
-                <span class="subCat">${item.title}</span>, <span class="location">${item.city}</span>
-              </div>
-              <div class="rate">
-                ${item.productStar}
-                <span>${item.ratingsQuantity}</span>
-              </div>
-            </div>
-            <div class="smail">
-              <p class="desc">${item.description}</p>
-            </div>
-            <div class="bottom">
-              <div class="price"><span>$</span><span class="number">${item.pricePerDay} </span>/day</div>
-            </div>
-          </a>
-        </div>
         `;
         });
 
-        cardsContainer.innerHTML = ProductUI.slice(0, 4);
+        cardsContainer.innerHTML = ProductUI.slice(0, 4).join("");
       } else {
 
         cardsContainer.innerHTML = `<span>${res.message}</span>`;
